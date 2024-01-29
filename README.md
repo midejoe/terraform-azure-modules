@@ -8,14 +8,11 @@ This repository contains Terraform modules for provisioning Azure virtual networ
 - [Getting Started](#getting-started)
 - [Modules](#modules)
   - [1. Virtual Network](https://github.com/midejoe/terraform-azure-modules/blob/main/Infra/main.tf)
-  - [2. Subnets](#2-subnets)
-  - [3. Network Interface Cards (NIC)](#3-network-interface-cards-nic)
-  - [4. Virtual Machines](#4-virtual-machines)
-- [Examples](#examples)
-- [Variables](#variables)
-- [Outputs](#outputs)
-- [Contributing](#contributing)
-- [License](#license)
+  - [2. Subnets](https://github.com/midejoe/terraform-azure-modules/blob/main/Infra/main.tf)
+  - [3. Network Interface Cards (NIC)](https://github.com/midejoe/terraform-azure-modules/blob/main/Infra/main.tf)
+  - [4. Virtual Machines](https://github.com/midejoe/terraform-azure-modules/blob/main/Infra/main.tf)
+- [Variables](https://github.com/midejoe/terraform-azure-modules/blob/main/Infra/variables.tf)
+
 
 ## Prerequisites
 
@@ -33,8 +30,24 @@ To use these Terraform modules, follow these steps:
    ```bash
    git clone https://github.com/midejoe/terraform-azure-modules.git
    
-## Modules
+2. Change into the directory:
 
-##1-virtual-network
+   ```bash
+   cd your-repo
+
+3. Initialize Terraform:
+
+    ```bash
+   terraform init
+
+4. Create a Terraform execution plan:
+
+    ```bash
+    terraform plan
+
+5. Apply the plan to provision the infrastructure:
+
+    ```bash
+    terraform apply
 
 
