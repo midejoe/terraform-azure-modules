@@ -1,20 +1,35 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Terraform Modules for Azure Virtual Infrastructure
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+This repository contains Terraform modules for provisioning Azure virtual network, subnets, network interface cards (NIC), and virtual machines. These modules are designed to provide a flexible and scalable foundation for deploying virtualized infrastructure in Microsoft Azure.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Table of Contents
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Modules](#modules)
+  - [1. Virtual Network](#1-virtual-network)
+  - [2. Subnets](#2-subnets)
+  - [3. Network Interface Cards (NIC)](#3-network-interface-cards-nic)
+  - [4. Virtual Machines](#4-virtual-machines)
+- [Examples](#examples)
+- [Variables](#variables)
+- [Outputs](#outputs)
+- [Contributing](#contributing)
+- [License](#license)
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Prerequisites
+
+Before using these Terraform modules, ensure that you have the following prerequisites:
+
+- [Terraform](https://www.terraform.io/downloads.html) installed.
+- Azure subscription and necessary credentials.
+
+## Getting Started
+
+To use these Terraform modules, follow these steps:
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/midejoe/terraform-azure-modules.git
+   
