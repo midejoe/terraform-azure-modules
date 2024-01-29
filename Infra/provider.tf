@@ -11,6 +11,4 @@ terraform {
 
 provider "azurerm" {
   features {}
-  # subscription_id = "Enter your subscription id here"
-  # skip_provider_registration = true
 }

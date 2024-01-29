@@ -2,7 +2,6 @@ module "rg" {
   source      = "./rg"
   rg-location = var.rg-location
   rg-name     = var.rg-name
-
 }
 
 
@@ -12,6 +11,7 @@ module "virtual_network" {
   addr-space  = var.addr-space
   rg-location = var.rg-location
   rg-name     = var.rg-name
+  depends_on  = [module.rg]
 }
 
 module "subnets" {
@@ -33,7 +33,7 @@ module "nic" {
 
 }
 
-module "virtual_machines" {
+module "virtual_machine" {
   source      = "./vm"
   prefix      = var.prefix
   rg-location = var.rg-location
